@@ -16,7 +16,6 @@
 
 * Hard drive 1 (WD Black Performance SATA): 6TB, formatted as EXT4, mounted at `/mnt/Data1`. Use this for large, permanent data sets.
 
-
 * Hard drive 2 (WD Black Performance SATA): 6TB, formatted as EXT4, mounted at `/mnt/Data2`. Use this for large, permanent data sets.
 
 * IPv4: 10.47.201.62 (eth2, 1000 Mbps).
@@ -27,7 +26,7 @@
 
 * Available Editors: vi, vim, emacs, nano, code (VS Code).
 
-## How to establish an account?
+## Establish an account
 
 Email Dr. Hua Zhou <huazhou@ucla.edu>. Upon approval, you'll receive an email with username and one-time password.  Log in and change passwood IMMEDIATELY, using Linux command `passwd`.
 
