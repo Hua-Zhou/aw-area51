@@ -50,7 +50,7 @@ Using SSH keys is highly recommended.
 
 - RStudio Server can be accessed at <http://10.47.201.62:8787>. Log in using your account credential.
 
-- R version is v3.5.0. Many commonly used R packages (tidyverse, shiny, etc) are already installed systemwide and available to all users. You can find installed packages by R command `installed.packages()`. You can install extra packages, which will be put in your home directory (`~/R` by default). You can also request Dr. Hua Zhou to install packages globally.
+- R version is v3.6.0. Many commonly used R packages (tidyverse, shiny, etc) are already installed systemwide and available to all users. You can find installed packages by R command `installed.packages()`. You can install extra packages, which will be put in your home directory (`~/R` by default). You can also request Dr. Hua Zhou to install packages globally.
 
 ## Julia
 
