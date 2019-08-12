@@ -34,9 +34,9 @@ Email Dr. Hua Zhou <huazhou@ucla.edu>. Upon approval, you'll receive an email wi
 
 - Prerequisites for connecting to the machine: 
 
-	- If you are in CHS building and connected via ethernet cable, then `ssh 10.47.201.62` should work.
+	- If you are in CHS building and connected via ethernet cable, then `ssh [USERNAME]@10.47.201.62` should work.
 
-	- If you want to use WIFI (**NOT WORKING YET**), then:
+	- If you want to use WIFI to access the machine (**NOT WORKING YET**), then:
 		1. You need a UCLA MedNet account. 
 		2. On campus, you have to use the `UCLAHealthSecure` wifi. 
 		3. Off campus, you have to use the GobalProtect VPN Client and OnGuard associated with your MedNet acccount. See
@@ -62,9 +62,9 @@ Using SSH keys is highly recommended.
 
 - JupyterHub can be accessed at <http://10.47.201.62:8000>. Log in using your account credential.
 
-- JupyterLab interface: <http://http://10.47.201.62:8000/user/[USERNAME/lab?>.
+- JupyterLab interface: <http://10.47.201.62:8000/user/[USERNAME]/lab?>.
 
-- Jupyter notebook interface: <http://10.47.201.62:8000/user/huazhou/tree>.
+- Jupyter notebook interface: <http://10.47.201.62:8000/user/[USERNAME]/tree>.
 
 - Available Jupyter Notebook kernels: R, Python 2, Python 3, Julia 1.1.1, bash.
 
