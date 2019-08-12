@@ -12,23 +12,18 @@
 
 * SSD 1 (Kingston): 512GB PCIe NVMe M.2 SSD, CentOS 7 bootable.
 
-* SSD 2 (Kodak): 920GB SATA III SSD, mounted on `/mnt/AppRun`. Use this as scratch for big data computing (ephemeral).
-
+* SSD 2 (Kodak): 920GB SATA III SSD, mounted on `/mnt/AppRun`. Use this as scratch space for big data computation (ephemeral).
 
 * Hard drive 1 (WD Black Performance SATA): 6TB, formatted as EXT4, mounted at `/mnt/Data1`. Use this for large, permanent data sets.
 
 
 * Hard drive 2 (WD Black Performance SATA): 6TB, formatted as EXT4, mounted at `/mnt/Data2`. Use this for large, permanent data sets.
 
-
 * IPv4: 10.47.201.62 (eth2, 1000 Mbps).
-
 
 * USB flash drives: will be mounted at `/run/media/[USERNAME]/[DRIVENAME]`, e.g., `/run/media/huazhou/SanDisk64GB`.
 
-
 * Operating system: CentOS 7.
-
 
 * Available Editors: vi, vim, emacs, nano, code (VS Code).
 
@@ -54,8 +49,9 @@ Using SSH keys is highly recommended.
 
 ## R and RStudio
 
-RStudio Server can be accessed at <http://10.47.201.62:8787>.
-R version is v3.5.0. Many commonly used R packages (tidyverse, shiny, etc) are already installed systemwide and available to all users. You can find installed packages by R command `installed.packages()`. You can install extra packages, which will be put in your home directory (`~/R` by default).
+- RStudio Server can be accessed at <http://10.47.201.62:8787>. Log in using your account credential.
+
+- R version is v3.5.0. Many commonly used R packages (tidyverse, shiny, etc) are already installed systemwide and available to all users. You can find installed packages by R command `installed.packages()`. You can install extra packages, which will be put in your home directory (`~/R` by default). You can also request Dr. Hua Zhou to install packages globally.
 
 ## Julia
 
@@ -64,7 +60,11 @@ Julia v1.1.1 is available. Since v1.0, all Julia packages are installed in user 
 
 ## Jupyter
 
-- JupyterHub can be accessed at <http://10.47.201.62:8000>
+- JupyterHub can be accessed at <http://10.47.201.62:8000>. Log in using your account credential.
+
+- JupyterLab interface: <http://http://10.47.201.62:8000/user/[USERNAME/lab?>.
+
+- Jupyter notebook interface: <http://10.47.201.62:8000/user/huazhou/tree>.
 
 - Available Jupyter Notebook kernels: R, Python 2, Python 3, Julia 1.1.1, bash.
 
@@ -76,6 +76,6 @@ You can also use VS Code on your local machine (laptop or desktop) to develop co
 
 2. Install the `Remote Development extension pack` in VS Code.
 
-3. In VS Code, Run `Remote-SSH: Connect to Host...` from the Command Palette (`F1`) and enter `user@hostname`.
+3. In VS Code, Run `Remote-SSH: Connect to Host...` from the Command Palette (`F1`) and enter `[USERNAME]@10.47.201.62`.
 
 Read <https://code.visualstudio.com/docs/remote/ssh> for details.
