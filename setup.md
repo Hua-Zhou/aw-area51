@@ -54,4 +54,5 @@ Need to stop X server `init 3` to install successfully, also need to disable sec
 
 - Install Mosek:
     1. Need to copy existing mosek.lic file to `~/mosek/` folder.
-    2. 
+
+- Reboot hard drive paraphrase: 01011964
