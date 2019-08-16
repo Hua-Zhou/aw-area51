@@ -4,7 +4,7 @@
 
 * Chassis: Alienware Area51 R5. Full specs: <https://www.dell.com/support/manuals/us/en/04/alienware-area51-r4/alienwarearea51r5_setupandspecs/specifications?guid=guid-2795f926-e3d3-4d85-9813-11a63248dabb&lang=en-us>
 
-* CPU: Intel i9 9920X (12 core, 12.288MB L2 Cache, 19.712MB L3 Cache, 3.5 GHz up to 4.5GHz with Intel Turbo Boost Max 3.0). Full specs: <https://ark.intel.com/content/www/us/en/ark/products/189127/intel-core-i9-9920x-x-series-processor-19-25m-cache-up-to-4-50-ghz.html>.
+* CPU: Intel i9 9920X (12 core, 12.3MB L2 Cache, 19.7MB L3 Cache, 3.5 GHz up to 4.5GHz with Intel Turbo Boost Max 3.0). Full specs: <https://ark.intel.com/content/www/us/en/ark/products/189127/intel-core-i9-9920x-x-series-processor-19-25m-cache-up-to-4-50-ghz.html>.
 
 * GPU: NVIDIA GeForce RTX 2080 Ti OC with 11GB GDDR6 (14 Gbps), 4352 cores, SP 13.4 TFLOPs, INT4 430TOPs. Full specs: <https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/>.
 
@@ -36,10 +36,10 @@ Email Dr. Hua Zhou <huazhou@ucla.edu>. Upon approval, you'll receive an email wi
 
 	- If you are in CHS building and connected via ethernet cable, then `ssh [USERNAME]@10.47.201.62` should work.
 
-	- If you want to use WIFI to access the machine (**NOT WORKING YET**), then:
+	- If you want to use WIFI to access the machine, then:
 		1. You need a UCLA MedNet account. 
-		2. On campus, you have to use the `UCLAHealthSecure` wifi. 
-		3. Off campus, you have to use the GobalProtect VPN Client and OnGuard associated with your MedNet acccount. See
+		2. On UCLA medical campus, e.g., CHS building, you have to use the `UCLAHealthSecure` wifi, which requires your MedNet credential.  
+		3. Outside medical campus, you have to use the GobalProtect VPN Client and OnGuard associated with your MedNet acccount. See
 <https://mednet.uclahealth.org/device-security-toolkit/> for instructions. You need to file an IT service request at <https://mednet.uclahealth.org/it-service-catalog-quick-links/> to allow you use VPN over MedNet.
 
 - How to connect to AW Area51?
