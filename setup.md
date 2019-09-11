@@ -56,3 +56,16 @@ Need to stop X server `init 3` to install successfully, also need to disable sec
     1. Need to copy existing mosek.lic file to `~/mosek/` folder.
 
 - Reboot hard drive paraphrase: 01011964
+
+- To install R packages globally:  
+```
+R -e 'install.packages("PkgName")'
+```
+To set default CRAN mirror:   
+```
+echo 'options(repos = c(CRAN="http://cran.rstudio.com"))' >> /usr/lib64/R/library/base/R/Rprofile
+```
+To start RStudio server:
+```
+ sudo /usr/lib/rstudio-server/bin/rserver
+ ```
