@@ -54,7 +54,9 @@ Using SSH keys is highly recommended.
 
 ## Julia
 
-- Julia v1.1.1 is available. Since v1.0, all Julia packages are installed in user home directories.
+- Julia v1.1.1, v1.3.0, and v1.4.0 is available. In bash, you can access by `julia-1.1`, `julia-1.3`, and `julia-1.4` respectively.  Currently `julia` command is aliased with Julia v1.4.
+
+- Since v1.0, all Julia packages are installed in user home directories.
 
 - To use Jupyter notebook or JupyterLab, install the IJulia package in Julia and `build IJulia`.
 
