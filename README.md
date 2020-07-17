@@ -81,3 +81,14 @@ You can also use VS Code on your local machine (laptop or desktop) to develop co
 3. In VS Code, Run `Remote-SSH: Connect to Host...` from the Command Palette (`F1`) and enter `[USERNAME]@10.47.201.62`.
 
 Read <https://code.visualstudio.com/docs/remote/ssh> for details.
+
+## KNITRO
+
+To use Knitro (nonlinear programming software) in Julia, issue following command to install `KNITRO.jl` package.  
+```
+ENV["KNITRODIR"] = "/usr/local/knitro-12.2.2-Linux-64"
+using Pkg
+Pkg.add("KNITRO")
+Pkg.build("KNITRO")
+Pkg.test("KNITRO")
+```
