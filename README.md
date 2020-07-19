@@ -12,7 +12,11 @@
 
 * SSD 1 (Kingston): 512GB PCIe NVMe M.2 SSD, CentOS 7 bootable.
 
-* SSD 2 (Kodak): 920GB SATA III SSD, mounted on `/mnt/AppRun`. Use this as scratch space for big data computation (ephemeral). Make sure to delete data files after your computing is done. The environmental variable `TMPDIR` is also set to `/mnt/AppRun/tmp` systemwide, so temporary files from R, Julia and other programs will be dumped into this folder. (Add line `export TMPDIR="/mnt/AppRun/tmp"` to `/etc/bashrc` file.) Also add line `v /mnt/AppRun/tmp 1777 root root 10d` to `/usr/lib/tmpfiles.d/tmp.conf` to clean up the folder periodically.
+* SSD 2 (Kodak): 920GB SATA III SSD, mounted on `/mnt/AppRun`. This drive serves several purposes.  
+	- MATLAB is installed at `/mnt/AppRun/MATLAB`.  
+	- MATLAB 2020a installer is available at `/mnt/AppRun/matlab_R2020a_glnxa64`. 
+	- Use `/mnt/AppRun` as a scratch space for big data computation (ephemeral). Make sure to delete data files after your computing is done. 
+	- The environmental variable `TMPDIR` is set to `/mnt/AppRun/tmp` systemwide, so temporary files from R, Julia and other programs will be dumped into this folder. (Add line `export TMPDIR="/mnt/AppRun/tmp"` to `/etc/bashrc` file.) Also add line `v /mnt/AppRun/tmp 1777 root root 10d` to `/usr/lib/tmpfiles.d/tmp.conf` to clean up the folder periodically.
 
 * Hard drive 1 (WD Black Performance SATA): 6TB, formatted as EXT4, mounted at `/mnt/Data1`. Use this for large, permanent data sets.
 
