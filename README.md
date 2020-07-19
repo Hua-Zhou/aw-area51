@@ -82,6 +82,14 @@ You can also use VS Code on your local machine (laptop or desktop) to develop co
 
 Read <https://code.visualstudio.com/docs/remote/ssh> for details.
 
+## Matlab
+
+- Matlab is installed only for user `huazhou` under UCLA individual license. The install location is `/mnt/AppRun/MATLAB` with a symbolic link created `/usr/local/bin/matlab`.
+
+- If you want to use Matlab on this machine, follow following steps.  
+	- Follow the steps at <https://softwarecentral.ucla.edu/matlab-getmatlab> to sign up an account at UCLA MATLAB portal using your `ucla.edu` email. 
+	- Run the installer `/mnt/AppRun/matlab_R2020a_glnxa64/install`. This installation program requires GUI. So you need to enable X11 forwarding for SSH. During installation, make sure to use your own UCLA Matlab account credential. 
+
 ## KNITRO
 
 To use Knitro (nonlinear programming software) in Julia, issue following command to install `KNITRO.jl` package.  
