@@ -90,13 +90,17 @@ Read <https://code.visualstudio.com/docs/remote/ssh> for details.
 
 - Matlab is installed only for user `huazhou` under UCLA individual license. The install location is `/mnt/AppRun/MATLAB` with a symbolic link created `/usr/local/bin/matlab`.
 
-- If you want to use Matlab on this machine, follow following steps.  
-	- Follow the steps at <https://softwarecentral.ucla.edu/matlab-getmatlab> to sign up an account at UCLA MATLAB portal using your `ucla.edu` email. 
+- If you want to use Matlab on this machine, follow these steps.  
+	- Follow instructions at <https://softwarecentral.ucla.edu/matlab-getmatlab> to sign up an account at UCLA MATLAB portal using your `ucla.edu` email. 
 	- Run the installer `/mnt/AppRun/matlab_R2020a_glnxa64/install`. This installation program requires GUI. So you need to enable X11 forwarding for SSH. During installation, make sure to use your own UCLA Matlab account credential. 
 
 ## KNITRO
 
-To use Knitro (nonlinear programming software) in Julia, issue following command to install `KNITRO.jl` package.  
+To use Knitro (nonlinear programming software) in Julia, first copy the license into your home directory. In terminal (bash),
+```
+cp /usr/local/knitro-12.2.2-Linux-64/artelys_lic_trial_artelys_knitro_academic_64-7a-f6-75-54.txt ~
+```
+Then install the `KNITRO.jl` package in Julia
 ```
 ENV["KNITRODIR"] = "/usr/local/knitro-12.2.2-Linux-64"
 using Pkg
