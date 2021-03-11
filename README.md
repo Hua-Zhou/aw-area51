@@ -108,3 +108,23 @@ Pkg.add("KNITRO")
 Pkg.build("KNITRO")
 Pkg.test("KNITRO")
 ```
+
+## UK Biobank
+
+UK biobank data is avalable at `/mnt/ukbiobank_wdeasystore_14tb` with content  
+```
+74G	/mnt/ukbiobank_wdeasystore_14tb/accelerometer/accelerometer_data
+2.5M	/mnt/ukbiobank_wdeasystore_14tb/accelerometer/idlists
+74G	/mnt/ukbiobank_wdeasystore_14tb/accelerometer
+2.3T	/mnt/ukbiobank_wdeasystore_14tb/bulkexomevcf
+4.5T	/mnt/ukbiobank_wdeasystore_14tb/cnv
+8.5K	/mnt/ukbiobank_wdeasystore_14tb/dropoutfilter
+105G	/mnt/ukbiobank_wdeasystore_14tb/exome
+93G	/mnt/ukbiobank_wdeasystore_14tb/genotype
+51G	/mnt/ukbiobank_wdeasystore_14tb/haplotype
+2.4T	/mnt/ukbiobank_wdeasystore_14tb/imputed
+7.4G	/mnt/ukbiobank_wdeasystore_14tb/phenotype/UKBiobankRefresh
+61G	/mnt/ukbiobank_wdeasystore_14tb/phenotype
+9.4T	/mnt/ukbiobank_wdeasystore_14tb/
+```
+NEVER write to this external hard drive. For fast computing, copy relevant data to `/mnt/AppRun` (SSD) or `/mnt/Data2` (internal hard drive). 
