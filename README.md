@@ -98,11 +98,11 @@ Read <https://code.visualstudio.com/docs/remote/ssh> for details.
 
 To use Knitro (nonlinear programming software) in Julia, first copy the license into your home directory. In terminal (bash),
 ```
-cp /usr/local/knitro-12.2.2-Linux-64/artelys_lic_trial_artelys_knitro_academic_64-7a-f6-75-54.txt ~
+cp /usr/local/knitro-12.3.0-Linux-64/artelys_lic_3788_UCLABioStat_2021-03-12_temp_knitro_64-7a-f6-75-54.txt ~
 ```
 Then install the `KNITRO.jl` package in Julia
 ```
-ENV["KNITRODIR"] = "/usr/local/knitro-12.2.2-Linux-64"
+ENV["KNITRODIR"] = "/usr/local/knitro-12.3.0-Linux-64"
 using Pkg
 Pkg.add("KNITRO")
 Pkg.build("KNITRO")
