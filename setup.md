@@ -69,3 +69,6 @@ To start RStudio server:
 ```
  sudo /usr/lib/rstudio-server/bin/rserver
  ```
+
+- Install MySQL 8: <https://www.mysqltutorial.org/install-mysql-centos/>
+

@@ -128,3 +128,7 @@ UK biobank data is avalable at `/mnt/ukbiobank_wdeasystore_14tb` with content
 9.4T	/mnt/ukbiobank_wdeasystore_14tb/
 ```
 NEVER write to this external hard drive. For fast computing, copy relevant data to `/mnt/AppRun` (SSD) or `/mnt/Data2` (internal hard drive). 
+
+## Databases
+
+- MySQL v8 is installed.
