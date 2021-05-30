@@ -70,5 +70,6 @@ To start RStudio server:
  sudo /usr/lib/rstudio-server/bin/rserver
  ```
 
-- Install MySQL 8: <https://www.mysqltutorial.org/install-mysql-centos/>
-
+- Install MySQL 8: <https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html#yum-repo-installing-mysql>
+    - Move MySQL to an external hard drive: <https://www.thegeekstuff.com/2016/05/move-mysql-directory/>
+    - Use MySQL by ```mysql -u root -p --socket=/mnt/AppRun/var/lib/mysql/mysql.sock```
