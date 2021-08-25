@@ -129,6 +129,8 @@ UK biobank data is avalable at `/mnt/ukbiobank_wdeasystore_14tb` with content
 ```
 NEVER write to this external hard drive. For fast computing, copy relevant data to `/mnt/AppRun` (SSD) or `/mnt/Data2` (internal hard drive). 
 
+For researchers in Dr. Hua Zhou's group, UK Biobank data is also available on [Hoffman2 cluster](https://github.com/chris-german/Hoffman2Tutorials) at `/u/project/huas/kose/ukbdata/`. You need to apply for permission by emailing to Dr. Hua Zhou first.
+
 ## Databases
 
 - MySQL v8 is installed.
