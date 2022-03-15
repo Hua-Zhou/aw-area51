@@ -22,29 +22,29 @@ This didn't work out. Salvadore Munguia at DGIT installed the CentOS on the mach
     - `sudo yum update` after first log-in
     - Follow the steps at <https://github.com/felipenoris/math-server-docker> to install the common tools, including R/RStudio, JupyterHub, JupyterLab, Julia
     - Add PATH for all users. Create a bash script file with a name ending in `envs.sh` in the directory `/etc/profile.d`. The file must be readable by all users and make it owned by user `root`, group `root`. Put your export statements in that file.
-"""
+```sh
 export PATH=/usr/local/sbin:/usr/local/bin:$PATH
 export PATH=/usr/local/texlive/distribution/bin/x86_64-linux:$PATH
 export PATH=/usr/local/conda/anaconda3/bin:$PATH
-export PATH=/usr/local/cuda-10.1/bin:$PATH
+export PATH=/usr/local/cuda/bin:$PATH
 export CMAKE_ROOT=/usr/local/share/cmake-3.14
 export PYTHON=/usr/local/conda/anaconda3/envs/py3/bin/python
 export JULIA_PKGDIR=/usr/local/julia/share/julia/site
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64/R/lib:/usr/local/lib:/lib:/usr/lib/jvm/jre/lib/amd64/server:/usr/lib/jvm/jre/lib/amd64:/usr/lib/jvm/java/lib/amd64:/usr/java/packages/lib/amd64:/lib:/usr/lib:/usr/local/lib:/usr/local/cuda-10.1/lib64
-"""    
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64/R/lib:/usr/local/lib:/lib:/usr/lib/jvm/jre/lib/amd64/server:/usr/lib/jvm/jre/lib/amd64:/usr/lib/jvm/java/lib/amd64:/usr/java/packages/lib/amd64:/lib:/usr/lib:/usr/local/lib:/usr/local/cuda/lib64
+```    
 
 - To set up the JupyterHub: follow instructions at <https://github.com/jupyterhub/jupyterhub/wiki/Run-jupyterhub-as-a-system-service>. The line 
-"""
+```python
 c.JupyterHub.extra_log_file = '/var/log/jupyterhub.log'
-"""
+```
 in the configuration file `/etc/jupyterhub/jupyterhub_config.py` is causing trouble spawning the user processes because regular user doesn't have permission on the folder. Has to be commented out.
 
-- Install NVIDIA CUDA 10.1 <https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=CentOS&target_version=7&target_type=runfilelocal>
+- Install NVIDIA CUDA <https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&target_distro=CentOS&target_version=7&target_type=runfilelocal>
 Need to stop X server `init 3` to install successfully, also need to disable secure boot in BIOS.
 
-- Install CUDNN.
+- Install CUDNN. Current installation: Tar file installation
 
-- Test GPU installation in Julia: `test CuArrays`.
+- Test GPU installation in Julia: `test CUDA` in pkg mode of REPL. Julia's `CUDA` package installs a separate copy of CUDA and CUDNN by default via `BinaryBuilder`.  It can be disabled by `ENV["JULIA_CUDA_USE_BINARYBUILDER"] = "false"`.
 
 - Install Gurobi 8.1: 
     1. Download the .tar.gz file, from Gurobi website
