@@ -22,7 +22,7 @@
 
 * Hard drive 2 (WD Black Performance SATA): 6TB, formatted as EXT4, mounted at `/mnt/Data2`. Use this for large, permanent data sets.
 
-* IPv4: 10.47.201.62 (eth2, 1000 Mbps).
+* IPv4: 172.21.99.196 (eth2, 1000 Mbps).
 
 * USB flash drives: will be mounted at `/run/media/[USERNAME]/[DRIVENAME]`, e.g., `/run/media/huazhou/SanDisk64GB`.
 
@@ -38,7 +38,7 @@ Email Dr. Hua Zhou <huazhou@ucla.edu>. Upon approval, you'll receive an email wi
 
 - Prerequisites for connecting to the machine: 
 
-	- If you are in CHS building and connected via ethernet cable, then `ssh [USERNAME]@10.47.201.62` should work.
+	- If you are in CHS building and connected via Ethernet cable, then `ssh [USERNAME]@172.21.99.196` should work.
 
 	- If you want to use WIFI to access the machine, then:
 		1. You need a UCLA MedNet account. 
@@ -47,12 +47,12 @@ Email Dr. Hua Zhou <huazhou@ucla.edu>. Upon approval, you'll receive an email wi
 <https://mednet.uclahealth.org/device-security-toolkit/> for instructions. You need to file an IT service request at <https://mednet.uclahealth.org/it-service-catalog-quick-links/> to allow you use VPN over MedNet.
 
 - How to connect to AW Area51?
-`ssh <YourUserName>@10.47.201.62`
+`ssh <USERNAME>@172.21.99.196`
 Using SSH keys is highly recommended. 
 
 ## R and RStudio
 
-- RStudio Server can be accessed at <http://10.47.201.62:8787>. Log in using your account credential.
+- RStudio Server can be accessed at <http://172.21.99.196:8787>. Log in using your account credential.
 
 - R version is v3.6.0. Many commonly used R packages (tidyverse, shiny, etc) are already installed systemwide and available to all users. You can find installed packages by R command `installed.packages()`. You can install extra packages, which will be put in your home directory (`~/R` by default). You can also request Dr. Hua Zhou to install packages globally.
 
@@ -66,11 +66,11 @@ Using SSH keys is highly recommended.
 
 ## Jupyter
 
-- JupyterHub can be accessed at <http://10.47.201.62:8000>. Log in using your account credential.
+- JupyterHub can be accessed at <http://172.21.99.196:8000>. Log in using your account credential.
 
-- JupyterLab interface: <http://10.47.201.62:8000/user/[USERNAME]/lab?>.
+- JupyterLab interface: <http://172.21.99.196:8000/user/[USERNAME]/lab?>.
 
-- Jupyter notebook interface: <http://10.47.201.62:8000/user/[USERNAME]/tree>.
+- Jupyter notebook interface: <http://172.21.99.196:8000/user/[USERNAME]/tree>.
 
 - Available Jupyter Notebook kernels: R, Python 2, Python 3, Julia 1.1.1, bash.
 
@@ -82,7 +82,7 @@ You can also use VS Code on your local machine (laptop or desktop) to develop co
 
 2. Install the `Remote Development extension pack` in VS Code.
 
-3. In VS Code, Run `Remote-SSH: Connect to Host...` from the Command Palette (`F1`) and enter `[USERNAME]@10.47.201.62`.
+3. In VS Code, Run `Remote-SSH: Connect to Host...` from the Command Palette (`F1`) and enter `[USERNAME]@172.21.99.196`.
 
 Read <https://code.visualstudio.com/docs/remote/ssh> for details.
 
